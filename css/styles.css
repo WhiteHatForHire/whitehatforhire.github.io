@@ -1,0 +1,143 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size:16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+.pimg1{
+    background-image: url('../img/pimg1.jpg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('../img/pimg2.jpg');
+    min-height: 50%;
+}
+
+.pimg3{
+    background-image: url('../img/pimg3.jpg');
+    min-height: 50%;
+}
+
+.section{
+    text-align:center;
+    padding:10px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-light{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top:35%;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext2{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top:20%;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.opaq{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.heavy {
+    font-size: 60px;
+}
+
+.pink {
+    color:rgb(235, 159, 178);
+}
+.yellow {
+    color:rgb(247, 242, 183);
+}
+.blue {
+    color:rgb(159, 208, 248);
+}
+
+.nostyle{
+    list-style-type: none;
+    /* text-decoration: none; */
+    color: inherit;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+/* NAV */
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    text-decoration: none; 
+    
+}
+.nav li{
+    display:inline;
+    
+}
+.nav a{
+    display:inline-block;
+    margin: 0;
+    padding:10px;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    font-size:20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+    text-transform: uppercase;
+    
+}
+
+
+
+@media(max-width:568){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
