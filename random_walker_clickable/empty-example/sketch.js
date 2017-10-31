@@ -7,22 +7,22 @@ var choice1, choice2, choice3;
 function setup(){
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0,0);
-    canvas.style('z-index', ('-1'))
+    canvas.style('z-index', ('-1'));
     // for (var i = 0; i < 1; i++) {
     walker[i] = new Walker();
     // }
-    button = createButton('New Life-form');
-    button.position(windowWidth/2 + 10,0);
-    button.mousePressed(buttonPressed);
+    // button = createButton('New Life-form');
+    // button.position(windowWidth/2 + 10,0);
+    // button.mousePressed(buttonPressed);
     button2 = createButton('ScreenShot');
-    button2.position(windowWidth/2 -100,0);
+    button2.position(windowWidth/2 -33,0);
     button2.mousePressed(screenshot);
     slider = createSlider(1, 6, 1, 1);
     slider.position(windowWidth/2 - 55, 25);
     fill(255);
     myP = createP(num);
+    alert('Clickable Colonies: Create colonies by clicking on the screen, move the slider to change their size, and press the screenshot button to take screenshots of your artwork!')
     background(0);
-    alert("Create new creatures with the 'New Life-form' button, and take screenshots with the ScreenShot button. Use the slider to make smaller or bigger creatures. Have fun making amazing artwork. -Maxwell");
   }
 
   function screenshot(){
@@ -30,10 +30,20 @@ function setup(){
   }
 
 
-function buttonPressed(){
+// function buttonPressed(){
+//     console.log(choice1);
+//     i++;
+//     walker[i] = new Walker(num);
+// }
+
+function mousePressed(){
+    console.log(mouseX,mouseY)
+    if ((mouseY <= 40) && ((mouseX >= windowWidth/2 - 80) && (mouseX <= windowWidth/2 + 90))){
+        console.log('jawn');
+    }else{
     console.log(choice1);
     i++;
-    walker[i] = new Walker(num);
+    walker[i] = new Walker(num);}
 }
 
 function draw(){
