@@ -7,7 +7,10 @@ body, html{
     line-height: 1.8em;
     color: #666;
 }
-
+li > a > img {
+    width: 30%;
+    height: auto;
+}
 .pimg1, .pimg2, .pimg3 {
     position: relative;
     opacity: 0.80;
@@ -70,13 +73,30 @@ body, html{
     list-style-type: none;
     font-weight: 600;
 }
+.ptext3{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top:20%;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: 600;
+    color: white;
+}
+
+.ptext3 > a {
+    color: white;
+}
 
 .opaq{
     background-color: rgba(0, 0, 0, 0.75);
 }
 
 .heavy {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .pink {
@@ -87,6 +107,13 @@ body, html{
 }
 .blue {
     color:rgb(159, 208, 248);
+}
+
+.apti {
+    color:rgb(50, 240, 230);
+}
+.nostyle > a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
 }
 
 .nostyle{
@@ -140,4 +167,53 @@ body, html{
     .pimg1, .pimg2, .pimg3{
         background-attachment: scroll;
     }
+}
+
+/* COLUMNS */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
