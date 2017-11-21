@@ -1,3 +1,13 @@
+h2 {
+    margin: 0px;
+    padding-top: 20px;
+}
+
+h2 + p {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
 body, html{
     height: 100%;
     margin: 0;
@@ -40,12 +50,16 @@ li > a > img {
     padding:10px 80px;
 }
 
-.section-light{
+/* .section-light{
     background-color: #f4f4f4;
     color: #666;
-}
+} */
 
 .section-light{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ddd;
+}
+.section-dark{
     background-color: rgba(0, 0, 0, 0.75);
     color: #ddd;
 }
@@ -91,12 +105,13 @@ li > a > img {
     color: white;
 }
 
-.opaq{
-    background-color: rgba(0, 0, 0, 0.75);
+.indiv{
+    text-shadow: 1px 1px 3px #dbd8d8;
 }
 
 .heavy {
     font-size: 40px;
+    text-shadow: 2.2px 1.8px 0px rgb(109, 102, 102);
 }
 
 .pink {
