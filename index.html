@@ -1,110 +1,197 @@
-<!doctype html>
-
-<!-- TO DO
-
-  -hover nav
-  -active nav
-  -Services page
-  -js hide phone until clicked
--->
-
-<html lang="en">
+ <!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css\styles.css">
-  <title>Maxwell Stephens, Web Developer</title>
+	<title>Face Shield</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"><![endif]--><!-- Internet Explorer-->
+	
 </head>
 
 <body>
 
+	<div id="header">
+		<div class="header_left left">
+			<div class="logo_wrap">
+				<img id="main-logo" src="images/logo_full_white.png">
+			</div>
+		</div>
+
+		<div class="header_right right">
+			<div class="btn_wrap">
+				<a class="white_btn" href="#">Upload Now</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="main_content">
+
+		<div id="hp_banner_section" class="section">
+			<div class="hp_banner_inner">
+				<div class="container">
+					<div class="banner_cont">
+						<h1 class="title_heading section_titles">TAKE BACK CONTROL OF YOUR DIGITAL DATA</h1>
+						<h3 class="sub_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</h3>
+						<div class="btn_wrap">
+							<a class="white_btn" href="#hp_section3">LEARN MORE &gt;</a>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="as_featured_section">
+						<h3 class="sub_title">As Featured In:</h3>
+
+						<ul class="logos">
+							<li><a target="_blank" href="https://www.forbes.com/sites/jessedamiani/2018/05/31/ai-researchers-create-privacy-filter-that-disrupts-facial-recognition-technology/#4d5c39f16d96 "><img src="images/science_daily.png"></a></li>
+						<li><a target="_blank" href="https://www.cbc.ca/news/canada/toronto/u-of-t-facial-recognition-technology-privacy-filter-1.4693066 "><img src="images/cbc.png"></a></li>
+							<a target="_blank"  href="https://www.utoronto.ca/news/u-t-ai-researchers-design-privacy-filter-photos-disables-facial-recognition-systems"><li><img src="images/toronto.png"></a></li>
+							<li><a target="_blank"  href="https://www.thestar.com/news/gta/2018/06/05/u-of-t-researchers-design-algorithm-that-dupes-facial-recognition-detectors.html "><img src="images/toronto_star.png"></a></li>
+							<li><a target="_blank"  href="https://etapps.indiatimes.com/gcm_webnotification.cms "><img src="images/economic_times.png"></a></li>
+							<li><a target="_blank"  href="https://venturebeat.com/2018/05/31/university-of-toronto-researchers-develop-ai-that-can-defeat-facial-recognition-systems/ "><img src="images/venture_beat.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> <!-- #banner_section -->
+
+		<div id="hp_section2" class="section">
+			<div class="hp_section2_inner">
+				<div class="container">
+
+					<div class="img_wrap">
+						<img src="images/section2_img.jpg">
+					</div>
+
+					<div class="section_content right">
+						<h2>EVERY TIME YOU UPLOAD A PHOTO ONLINE, YOUR DATA IS EXPLOITED. FACESHIELD HAS THE SOLUTION.</h2>
+						<a class="link" href="#">LEARN MORE &gt;</a>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div> <!-- #hp_section2 -->
+
+		<div id="hp_section3" class="section">
+			<div class="hp_section3_inner">
+				<div class="container">
+
+					<div class="title_block">
+						<h1>FAST, POWERFUL, FREE</h1>
+						<h3>Faceshield is an Instagram-like filter you can apply to your photos that blocks face detection online. It adds noise to specific regions of your face such as eyes, nose or jaw line to 'fool' the face detector into thinking there is no face in the photo. The photo is still recognizable, but the face detectors catastrophically fail!</h3>
+						<h4>TRY ALL 3 VERSIONS &gt;</h4>
+					</div>
 
 
+					<div class="content_block">
+						<div class="col one left">
+							<img src="images/iphone_img_left.png">
+						</div>
 
+						<div class="col two right">
+							<div class="img_txt">
+								<div class="img left">
+									<img src="images/subtle.jpg">
+								</div>
+								<div class="txt right">
+									<h3 class="title">SUBTLE</h3>
+									<h3 class="cont">The edited image is almost identical to the original and breaks some detectors.</h3>
+								</div>
+								<div class="clear"></div>
+							</div>
 
-  <div class="pimg1">
-    <!--NAV BAR !-->
-    <ul class="nav">
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="services.html">Services</a>
-      </li>
-      <li>
-        <a href="clients.html">Clients</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-      <li>
-        <a href="work.html">Work</a>
-      </li>
-    </ul>
-    <!--END NAV BAR !-->
-    <div class="ptext">
-      <span class="border trans">
-        <div class="heavy">White Hat Web Dev</div>
-        </br>
-        <div class="indiv">
-          <div class="pink opaq">Professional</div>
-          <div class="yellow opaq">Web</div>
-          <div class="blue opaq">Developers</div>
-        </div>
-      </span>
-    </div>
-  </div>
+							<div class="img_txt">
+								<div class="img left">
+									<img src="images/medium.jpg">
+								</div>
+								<div class="txt right">
+									<h3 class="title">MEDIUM</h3>
+									<h3 class="cont">The differences are more noticeable but it breaks many more detectors.</h3>
+								</div>
+								<div class="clear"></div>
+							</div>
 
+							<div class="img_txt">
+								<div class="img left">
+									<img src="images/intense.jpg">
+								</div>
+								<div class="txt right">
+									<h3 class="title">INTENSE</h3>
+									<h3 class="cont">Even you can't recognize your own face, but neither can face detectors.</h3>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
 
-  <section class="section section-dark">
-    <h2>Professional Web-Sites</h2>
-    <p>
-      Ground-up design, database support, optimized to scale limitlessly
-    </p>
-  </section>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div> <!-- #hp_section3 -->
 
-  <div class="pimg2">
-    <div class="ptext">
-      <span class="border trans">
-        <div class="opaq">On the cutting edge</div>
-      </span>
-    </div>
-  </div>
+		<div id="hp_section4" class="section">
+			<div class="container">
+				<div class="hp_section4_inner">
 
-  <section class="section section-light">
-    <h2>Modern, Sleek, Refined</h2>
-    <p>
-      Combining technological sensibility and business savyy insight to build a better web
-    </p>
-  </section>
+					<h1>IT'S EASY TO PROTECT YOUR PHOTOS</h1>
+					<ul>
+						<li>Upload Your Photo</li>
+						<li>Choose a Strength</li>
+						<li>We'll Send Back the Shielded Version</li>
+					</ul>
 
-  <div class="pimg3">
-    <div class="ptext">
-      <span class="border trans">
-        <div class="opaq">Future Minded</div>
-      </span>
-    </div>
-  </div>
+					<div class="btn_wrap">
+						<a href="#">UPLOAD PHOTO</a>
+					</div>
 
-  <section class="section section-light">
-    <h2>Always Adapting</h2>
-    <p>
-      Limitless customization to meet client needs
-    </p>
-  </section>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div> <!-- #hp_section4 -->
 
-  <div class="pimg1">
-    <div class="ptext">
-      <span class="border trans">
-        White Hat Web Dev </br>
-        </br>
-        Professional Web Developers
-      </span>
-    </div>
-  </div>
+		<div id="hp_section5" class="section">
+			<div class="container">
+				<div class="hp_section5_inner">
+
+					<h1>OUR TEAM</h1>
+					
+					<div class="team_cont one">
+						<div class="img_wrap left">
+							<img src="images/joey.png">
+						</div>
+
+						<div class="team_detail right">
+							<h3><strong>Joey Bose, Founder & President</strong></h3>
+							<h4>Joey Bose is a PhD student at McGill / MILA where he works on creating socially responsible AI solutions. Previously, he was a Masters student at the University of Toronto where his research focused on Adversarial Machine Learning which includes breaking Face Detectors with Deep Learning and applying GAN's to problems in Natural Language Processing.</h4>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div class="team_cont two">
+						<div class="img_wrap left">
+							<img src="images/margarita.png">
+						</div>
+
+						<div class="team_detail right">
+							<h3><strong>Margarita Quijano, COO</strong></h3>
+							<h4>Margarita Quijano is a Next 36 entrepreneur who founded VueTech Inc. the AR mobile app to empower people with their purchase decisions. She has consulted over 10 small and medium enterprises and rebuilt their websites. She has a BSc from Western University.</h4>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div> <!-- #hp_section5 -->
+
+	</div> <!-- #main_content -->
+<script src="js/zenscroll-min.js"></script>
 </body>
 
-</html>
+</html> 
